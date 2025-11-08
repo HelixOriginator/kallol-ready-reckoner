@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kallol's Ready Reckoners - Evidence-Based Systematic Frameworks</title>
+    <meta name="description" content="World's first ready reckoner series: Sanatana Samyata (complete dharma defense), Roots & Wings (heritage education), Debunking 90 Civilizational Myths, Sanatana Darshana (evidence-based guide for atheists), Legal Literacy for India's 2024 criminal laws, Electoral Misinformation Counter, and Karma Index for ethical governance analysis.">
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Kallol's Ready Reckoners - Evidence-Based Frameworks">
+    <meta property="og:description" content="World's first ready reckoner series on Dharma defense, heritage education, legal literacy, and ethical governance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://helixoriginator.github.io/kallol-ready-reckoners/">
+    <meta property="og:image" content="https://helixoriginator.github.io/kallol-ready-reckoners/og-banner.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kallol's Ready Reckoners">
+    <meta name="twitter:description" content="7 groundbreaking ready reckoners on Hindu Dharma, law, education & governance.">
+    <meta name="twitter:image" content="https://helixoriginator.github.io/kallol-ready-reckoners/og-banner.jpg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+       
+        .header-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+       
+        .header-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+       
+        .header-banner .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 1.5rem;
+        }
+       
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+       
+        .contact-links {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+       
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+       
+        .contact-links a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+       
+        .container {
+            max-width: 1200px;
+            margin: -2rem auto 2rem;
+            padding: 0 1rem;
+        }
+       
+        .intro-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            border-left: 6px solid #667eea;
+        }
+       
+        .intro-card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+       
+        .intro-card p {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+       
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+       
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+       
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+       
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+       
+        .stat-label {
+            color: #666;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+       
+        .reckoner-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+       
+        .reckoner-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-left: 6px solid #667eea;
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .reckoner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+       
+        .reckoner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
+        }
+       
+        .reckoner-number {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+        }
+       
+        .reckoner-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-right: 60px;
+        }
+       
+        .reckoner-card .abstract {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 0.98rem;
+        }
+       
+        .reckoner-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+       
+        .reckoner-links a {
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+       
+        .doi-link {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+       
+        .doi-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+       
+        .pdf-link {
+            background: #10b981;
+            color: white;
+        }
+       
+        .pdf-link:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+       
+        .featured-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b, #ef4444);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+       
+        footer {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+       
+        footer p {
+            margin: 0.5rem 0;
+        }
+       
+        @media (max-width: 768px) {
+            .header-banner h1 { font-size: 1.8rem; }
+            .header-banner .subtitle { font-size: 1rem; }
+            .stat-number { font-size: 2.5rem; }
+            .reckoner-card h3 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner">
+        <h1>Kallol's Ready Reckoners</h1>
+        <p class="subtitle">Evidence-Based Systematic Frameworks for Education, Governance & Cultural Understanding</p>
+        <div class="badge">World's First Comprehensive Ready Reckoner Series</div>
+        <div class="contact-links">
+            <a href="https://orcid.org/0009-0005-7419-0689" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://zenodo.org/communities/kallol-chakrabarti-research" target="_blank" rel="noopener">Zenodo</a>
+            <a href="https://helixoriginator.github.io/kallol-research-hub/" target="_blank" rel="noopener">Governance Hub</a>
+            <a href="https://helixoriginator.github.io/sanatan-dharma-research-repository/" target="_blank" rel="noopener">Dharma Hub</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="intro-card">
+            <h2>What Are Ready Reckoners?</h2>
+            <p>Ready Reckoners are comprehensive, evidence-based reference guides designed for quick access to complex topics. This pioneering series provides systematic frameworks backed by scriptural evidence, constitutional law, and scholarly research. From defending Hindu Dharma against misconceptions to understanding India's new criminal laws, these groundbreaking works serve as authoritative resources for scholars, educators, policymakers, and informed citizens.</p>
+        </div>
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">7</span>
+                <div class="stat-label">Ready Reckoners</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">90+</span>
+                <div class="stat-label">Myths Debunked</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">World-First</span>
+                <div class="stat-label">Innovation Series</div>
+            </div>
+        </div>
+        <div class="reckoner-grid">
+            <!-- Ready Reckoner 1 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">1</div>
+                <div class="featured-badge">FEATURED</div>
+                <h3>SANATANA SAMYATA: The Complete Dharma Defense Manual</h3>
+                <div class="abstract">
+                    World's first comprehensive ready reckoner systematically addressing widespread myths and distortions about Hinduism. Provides point-by-point rebuttals rooted in core dharmic principles such as equality, non-violence, and merit-based spiritual growth. Evidence drawn directly from Hindu scriptures, historical records, and contemporary social realities. More than a defense manual—a tool for education, empowerment, and cultural self-respect.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.5281/zenodo.16714489" class="doi-link" target="_blank" rel="noopener" aria-label="View SANATANA SAMYATA on Zenodo">View Paper</a>
+                    <a href="https://zenodo.org/records/16714489/files/SANATANA%20SAMYATA%20The%20Complete%20Dharma%20Defense%20Manual.pdf?download=1" class="pdf-link" target="_blank" rel="noopener" aria-label="Download SANATANA SAMYATA PDF">Download PDF</a>
+                </div>
+            </div>
+            <!-- Ready Reckoner 2 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">2</div>
+                <h3>Roots & Wings: A Ready Reckoner for Young Minds</h3>
+                <div class="abstract">
+                    Novel educational framework systematically integrating ancient Indian wisdom with contemporary values for holistic development of learners aged 10-16. Twenty chapters across six thematic progressions following seven-part structure: narrative immersion, conceptual exploration, Sanskrit integration, inclusive biographical focus, mapping to modern contexts, reflective practice, and synthesis. Pilot applications showed greater heritage engagement, improved cultural literacy, and increased family discussions about cultural topics.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.5281/zenodo.17170006" class="doi-link" target="_blank" rel="noopener" aria-label="View Roots & Wings on Zenodo">View Paper</a>
+                    <a href="https://zenodo.org/records/17170006/files/Roots%20&%20Wings%20%20A%20Ready%20Reckoner%20for%20Young%20Minds%20%20Integrating%20Ancient%20Indian%20Wisdom%20with%20Modern%20Values%20for%20Holistic%20Child%20Development.pdf?download=1" class="pdf-link" target="_blank" rel="noopener" aria-label="Download Roots & Wings PDF">Download PDF</a>
+                </div>
+            </div>
+            <!-- Ready Reckoner 3 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">3</div>
+                <div class="featured-badge">FEATURED</div>
+                <h3>Debunking Civilizational Myths: A Comprehensive Ready Reckoner</h3>
+                <div class="abstract">
+                    Systematically addresses 90 myths across India's constitutional jurisprudence, Sanatana Dharma (Hinduism and Indic philosophy), and Indian historical narratives. Provides quick-access myth-rebuttal entries with citations from constitutional law, Supreme Court judgments, dharmic scriptures, and Indian historiography. Highlights how colonial interpretations, Marxist historiography, and selective readings have shaped public perceptions. Designed for scholars, policymakers, and educators.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.5281/zenodo.16977623" class="doi-link" target="_blank" rel="noopener" aria-label="View Debunking Civilizational Myths on Zenodo">View Paper</a>
+                    <a href="https://zenodo.org/records/16977623/files/Debunking%20Civilizational%20Myths%20A%20Comprehensive%20Ready%20Reckoner%20on%20India's%20Constitutional,%20Dharmic,%20and%20Historical%20Narratives%20conv.pdf?download=1" class="pdf-link" target="_blank" rel="noopener" aria-label="Download Debunking Civilizational Myths PDF">Download PDF</a>
+                </div>
+            </div>
+            <!-- Ready Reckoner 4 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">4</div>
+                <h3>Sanatana Darshana: Evidence-Based Guide for Atheists, Agnostics & Ex-Muslims</h3>
+                <div class="abstract">
+                    First comprehensive guide aimed specifically at non-believers, presenting Hindu ethics, philosophy, cosmology, and spiritual practices through reason, historical references, and scientific parallels rather than faith-based argumentation. Explains key concepts such as karma, dharma, caste, gender roles, God, cosmology, and meditation using clear explanations and accessible language. Focuses on education and rational inquiry, not conversion. Provides model for interfaith understanding.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.5281/zenodo.17334809" class="doi-link" target="_blank" rel="noopener" aria-label="View Sanatana Darshana on Zenodo">View Paper</a>
+                    <a href="https://zenodo.org/records/17334809/files/Sanatana_Darshana_Ready_Reckoner_for_Ex_Muslims_and_Agnostics_Hindu_Dharma.pdf.pdf?download=1" class="pdf-link" target="_blank" rel="noopener" aria-label="Download Sanatana Darshana PDF">Download PDF</a>
+                </div>
+            </div>
+            <!-- Ready Reckoner 5 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">5</div>
+                <div class="featured-badge">NEW LAWS 2024</div>
+                <h3>Legal Literacy Framework: India's New Criminal Laws (2024)</h3>
+                <div class="abstract">
+                    Comprehensive study of India's transition to Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA)—most significant criminal law reforms in modern India. Framework built around three dimensions: Shakti (legal knowledge), Yukti (practical strategies), and Mukti (ethical grounding). Designed for college students with accessible, culturally aligned, actionable guidance. Addresses critical educational gap in legal literacy.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.5281/zenodo.17213599" class="doi-link" target="_blank" rel="noopener" aria-label="View Legal Literacy Framework on Zenodo">View Paper</a>
+                    <a href="https://zenodo.org/records/17213599/files/LEGAL%20LITERACY%20FRAMEWORK%20FOR%20INDIAN%20COLLEGE%20STUDENTS%20A%20COMPREHENSIVE%20STUDY%20OF%20INDIA'S%20NEW%20CRIMINAL%20LAWS%20(2024).pdf?download=1" class="pdf-link" target="_blank" rel="noopener" aria-label="Download Legal Literacy Framework PDF">Download PDF</a>
+                </div>
+            </div>
+            <!-- Ready Reckoner 6 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">6</div>
+                <div class="featured-badge">ELECTORAL INTEGRITY</div>
+                <h3>Safeguarding Democratic Truth: Countering Electoral Misinformation</h3>
+                <div class="abstract">
+                    World's first comprehensive ready reckoner specifically designed for an Election Commission to systematically counter misinformation threatening electoral integrity in digital age. Unique hybrid methodology integrating constitutional law, empirical evidence, and philosophical wisdom in electoral communication. Addresses 30 systematically identified misinformation categories across entire electoral ecosystem. Establishes new global standard for institutional communication and democratic education. Sets benchmark for maintaining public trust through transparency and evidence.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.62891/ec31f4fb" class="doi-link" target="_blank" rel="noopener" aria-label="View Safeguarding Democratic Truth on DeSci Labs">View Paper</a>
+                    <a href="https://nodes.desci.com/dpid/574/v1/root/SAFEGUARDINGDEMOCRATICTRUTHACOMPREHENSIVEREADYRECKONERFORCOUNTERINGELECTORALMISINFORMATION.pdf" class="pdf-link" target="_blank" rel="noopener" aria-label="Download Safeguarding Democratic Truth PDF">Download PDF</a>
+                </div>
+            </div>
+            <!-- Ready Reckoner 7 -->
+            <div class="reckoner-card">
+                <div class="reckoner-number">7</div>
+                <h3>The Karma Index (KI): Measuring Ethical Causality in Governance</h3>
+                <div class="abstract">
+                    Quantitative framework for integrating ancient wisdom traditions into contemporary governance policy analysis. Five-stage methodology combining narrative policy analysis, textual interpretation of dharmic principles, quantitative impact assessment, principle extraction, and structured presentation. Formula synthesizes positive and negative policy impacts weighted by certainty, magnitude, temporal scope, and implementation scope. Case study of Goa's preventive healthcare generated Karma Index score of 9.2/10, demonstrating strong ethical alignment.
+                </div>
+                <div class="reckoner-links">
+                    <a href="https://doi.org/10.5281/zenodo.17374186" class="doi-link" target="_blank" rel="noopener" aria-label="View The Karma Index on Zenodo">View Paper</a>
+                    <a href="https://zenodo.org/records/17374186/files/The-Karma-Index-KI-Novel-Model-Measuring-Ethical-Causality-Ancient-Wisdom-Modern-Governance.pdf.pdf?download=1" class="pdf-link" target="_blank" rel="noopener" aria-label="Download The Karma Index PDF">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><strong>© 2025 Kallol Chakrabarti. All rights reserved.</strong></p>
+        <p style="margin-top: 1rem;">Ready Reckoner Series - Evidence-Based Systematic Frameworks</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Explore More: <a href="https://helixoriginator.github.io/kallol-research-hub/" style="color: #60a5fa;" target="_blank" rel="noopener">Governance Research Hub</a> | <a href="https://helixoriginator.github.io/sanatan-dharma-research-repository/" style="color: #60a5fa;" target="_blank" rel="noopener">Sanatan Dharma Repository</a></p>
+    </footer>
+</body>
+</html>
