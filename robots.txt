@@ -1,10 +1,4 @@
-git add robots.txt
-git commit -m "Add robots.txt for SEO"
-git push
-```
+User-agent: *
+   Allow: /
 
-### Step 5: Verify It Works
-
-After uploading, visit:
-```
-https://helixoriginator.github.io/kallol-ready-reckoner/robots.txt
+   Sitemap: https://helixoriginator.github.io/kallol-ready-reckoner/sitemap.xml
